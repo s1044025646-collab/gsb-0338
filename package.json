@@ -1,0 +1,17 @@
+{
+  "name": "pipeline-hazard-sim",
+  "version": "1.0.0",
+  "private": true,
+  "description": "五级流水线数据冒险与转发回放后端（教学用，TypeScript + Node.js + SQLite）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/tests/*.test.js\"",
+    "start": "node dist/server.js",
+    "demo": "node dist/cli.js demo",
+    "cli": "node dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.5.0"
+  }
+}
